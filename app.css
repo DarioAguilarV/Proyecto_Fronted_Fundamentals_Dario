@@ -1,0 +1,99 @@
+/*reglas generales*/
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */
+span {
+    color: #037BC0;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+li {
+    float: left;
+    background-color: lightgrey;
+}
+a {
+    display: block;
+    padding: 7px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#hero {
+    width: 100%;
+    height:"300";
+    box-sizing: border-box;
+}
+
+#contenedor_producto1 {
+    text-align: left;
+    width: 100%;
+}
+#imagen_prodcuto1 {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#descripcion_producto1 {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.clearfix1 {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contenedor_producto23 {
+    text-align: left;
+    width: 100%;
+}
+#producto2 {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#producto3 {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.clearfix23::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.producto456 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.clearfix ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
