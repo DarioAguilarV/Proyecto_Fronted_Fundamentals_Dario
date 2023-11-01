@@ -10,20 +10,11 @@ span {
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: lightgrey;
-}
-li {
-    float: left;
-    background-color: lightgrey;
-}
-a {
-    display: block;
-    padding: 7px;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    font-size: 20px;
 }
 
 h1 {
@@ -40,60 +31,137 @@ h2 {
     box-sizing: border-box;
 }
 
-#contenedor_producto1 {
-    text-align: left;
-    width: 100%;
+.wrapper_producto1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row: 10px;
+    column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
 }
+
+.wrapper_producto1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    
+}
+.wrapper_producto1 > {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 1em;
+
+} 
+
 #imagen_prodcuto1 {
-    width: 50%;
-    float: left;
-    padding: 5px;
-    box-sizing: border-box;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+
 }
 #descripcion_producto1 {
-    width: 50%;
-    float: right;
-    padding: 5px;
-    box-sizing: border-box;
-}
-.clearfix1 {
-    content: "";
-    display: table;
-    clear: both;
+    grid-column: 4 / span 2;
+    grid-row: 1;
 }
 
-#contenedor_producto23 {
-    text-align: left;
-    width: 100%;
-}
-#producto2 {
-    width: 50%;
-    float: left;
-    padding: 5px;
+
+#imagen_producto2 {
+    grid-area: imagen_producto2;
+    border: 2px solid black;
+    border-radius: 5px;
     box-sizing: border-box;
+    padding: 10px;
 }
-#producto3 {
-    width: 50%;
-    float: right;
-    padding: 5px;
+#imagen_producto3 {
+    grid-area: imagen_producto3;
+    border: 2px solid black;
+    border-radius: 5px;
     box-sizing: border-box;
+    padding: 10px;
+}
+#descripcion_producto2 {
+    grid-area: descripcion_producto2;
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#descripcion_producto3 {
+    grid-area: descripcion_producto3;
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.wrapper_producto23 {
+    display: grid;
+    grid-template-areas: 
+        "imagen_producto2 imagen_producto2 imagen_producto3 imagen_producto3"
+        "descripcion_producto2 descripcion_producto2 descripcion_producto3 descripcion_producto3";  
 }
 
-.clearfix23::after {
-    content: "";
-    display: table;
-    clear: both;
+.wrapper_producto23 > div {
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 10x;
 }
 
-.producto456 {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+
+
+#imagen_producto4 {
+    grid-area: imagen_producto4;
+    border: 2px solid black;
+    border-radius: 5px;
     box-sizing: border-box;
+    padding: 10px;
 }
-
-.clearfix ::after {
-    content: "";
-    clear: both;
-    display: table;
+#imagen_producto5 {
+    grid-area: imagen_producto5;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#imagen_producto6 {
+    grid-area: imagen_producto6;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#descripcion_producto4 {
+    grid-area: descripcion_producto4;
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#descripcion_producto5 {
+    grid-area: descripcion_producto5;
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#descripcion_producto6 {
+    grid-area: descripcion_producto6;
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.wrapper_producto456 {
+    display: grid;
+    grid-template-areas: 
+        "imagen_producto4 imagen_producto5 imagen_producto6"
+        "descripcion_producto4 descripcion_producto5 descripcion_producto6";   
+}
+.wrapper_producto456 > div {
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 10x;
 }
